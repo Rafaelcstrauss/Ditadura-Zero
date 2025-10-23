@@ -1,6 +1,7 @@
-[gd_scene load_steps=23 format=4 uid="uid://dlselkvqw01wb"]
+[gd_scene load_steps=24 format=4 uid="uid://dlselkvqw01wb"]
 
 [ext_resource type="PackedScene" uid="uid://cf36susui4qc8" path="res://fundo.tscn" id="1_epypp"]
+[ext_resource type="PackedScene" uid="uid://7lhs0bvgpipi" path="res://menusub/submenu.tscn" id="1_hqns4"]
 [ext_resource type="Texture2D" uid="uid://0d6mkybgjarg" path="res://tilesets/Sidescroller Shooter - Central City/Assets/Buildings.png" id="4_kdubu"]
 [ext_resource type="Texture2D" uid="uid://bawsi6hc8lftv" path="res://tilesets/Sidescroller Shooter - Central City/Assets/Props-01.png" id="5_d21ai"]
 [ext_resource type="Texture2D" uid="uid://84axo0ow0hh8" path="res://tilesets/Sidescroller Shooter - Central City/Assets/Tiles.png" id="5_q6r6c"]
@@ -1251,6 +1252,8 @@ sources/3 = SubResource("TileSetAtlasSource_x0ka3")
 
 [node name="mundo1" type="Node2D"]
 position = Vector2(2, 0)
+
+[node name="submenu" parent="." instance=ExtResource("1_hqns4")]
 
 [node name="Sprite2D" parent="." instance=ExtResource("1_epypp")]
 position = Vector2(0, 2)

@@ -1303,4 +1303,5 @@ frame_progress = 0.590159
 stream = ExtResource("2_fcvgf")
 volume_db = 5.943
 autoplay = true
+bus = &"Music"
 parameters/looping = true
