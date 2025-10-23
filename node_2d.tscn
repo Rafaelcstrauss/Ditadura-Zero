@@ -1249,7 +1249,7 @@ sources/1 = SubResource("TileSetAtlasSource_d21ai")
 sources/2 = SubResource("TileSetAtlasSource_rj586")
 sources/3 = SubResource("TileSetAtlasSource_x0ka3")
 
-[node name="Node2D" type="Node2D"]
+[node name="mundo1" type="Node2D"]
 position = Vector2(2, 0)
 
 [node name="Sprite2D" parent="." instance=ExtResource("1_epypp")]
