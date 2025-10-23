@@ -1,0 +1,1306 @@
+[gd_scene load_steps=14 format=3 uid="uid://cu8sv83y2ojri"]
+
+[ext_resource type="Texture2D" uid="uid://coobsqmheqarx" path="res://6f301a592024416f92e575fb38aefab0d3fd0fb8_hq.png" id="1_t613e"]
+[ext_resource type="AudioStream" uid="uid://n5skhuuo1n4c" path="res://Rain falling steadily on a calm lake, creating gentle ripples..mp3" id="2_fcvgf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fcvgf"]
+atlas = ExtResource("1_t613e")
+region = Rect2(908, 0, 227, 1500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pl7kv"]
+atlas = ExtResource("1_t613e")
+region = Rect2(0, 0, 227, 1500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aunbu"]
+atlas = ExtResource("1_t613e")
+region = Rect2(227, 0, 227, 1500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oj1is"]
+atlas = ExtResource("1_t613e")
+region = Rect2(681, 0, 227, 1500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uddrq"]
+atlas = ExtResource("1_t613e")
+region = Rect2(1135, 0, 227, 1500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y2tu5"]
+atlas = ExtResource("1_t613e")
+region = Rect2(1362, 0, 227, 1500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2wq3c"]
+atlas = ExtResource("1_t613e")
+region = Rect2(1589, 0, 227, 1500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iptp4"]
+atlas = ExtResource("1_t613e")
+region = Rect2(1816, 0, 227, 1500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_msrel"]
+atlas = ExtResource("1_t613e")
+region = Rect2(2043, 0, 227, 1500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wwt00"]
+atlas = ExtResource("1_t613e")
+region = Rect2(2270, 0, 227, 1500)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_myxmb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fcvgf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pl7kv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aunbu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oj1is")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uddrq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y2tu5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2wq3c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iptp4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_msrel")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wwt00")
+}],
+"loop": true,
+"name": &"chuva",
+"speed": 11.0
+}]
+
+[node name="chuva" type="CharacterBody2D"]
+position = Vector2(-9, 16)
+
+[node name="chuva5" type="AnimatedSprite2D" parent="."]
+position = Vector2(23, 615)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva6" type="AnimatedSprite2D" parent="."]
+position = Vector2(66, 614)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva7" type="AnimatedSprite2D" parent="."]
+position = Vector2(109.16, 615.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva8" type="AnimatedSprite2D" parent="."]
+position = Vector2(152.16, 614.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva9" type="AnimatedSprite2D" parent="."]
+position = Vector2(196.16, 612.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva10" type="AnimatedSprite2D" parent="."]
+position = Vector2(239.16, 611.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva11" type="AnimatedSprite2D" parent="."]
+position = Vector2(282.321, 613.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva12" type="AnimatedSprite2D" parent="."]
+position = Vector2(325.321, 612.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva13" type="AnimatedSprite2D" parent="."]
+position = Vector2(368.16, 611)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva14" type="AnimatedSprite2D" parent="."]
+position = Vector2(411.16, 610)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva15" type="AnimatedSprite2D" parent="."]
+position = Vector2(454.321, 611.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva16" type="AnimatedSprite2D" parent="."]
+position = Vector2(497.321, 610.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva17" type="AnimatedSprite2D" parent="."]
+position = Vector2(541.321, 608.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva18" type="AnimatedSprite2D" parent="."]
+position = Vector2(584.321, 607.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva19" type="AnimatedSprite2D" parent="."]
+position = Vector2(627.481, 609.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva20" type="AnimatedSprite2D" parent="."]
+position = Vector2(670.481, 608.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva21" type="AnimatedSprite2D" parent="."]
+position = Vector2(714.16, 608)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva22" type="AnimatedSprite2D" parent="."]
+position = Vector2(757.16, 607)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva23" type="AnimatedSprite2D" parent="."]
+position = Vector2(800.321, 608.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva24" type="AnimatedSprite2D" parent="."]
+position = Vector2(843.321, 607.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva25" type="AnimatedSprite2D" parent="."]
+position = Vector2(887.321, 605.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva26" type="AnimatedSprite2D" parent="."]
+position = Vector2(930.321, 604.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva27" type="AnimatedSprite2D" parent="."]
+position = Vector2(973.481, 606.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva28" type="AnimatedSprite2D" parent="."]
+position = Vector2(1016.48, 605.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva29" type="AnimatedSprite2D" parent="."]
+position = Vector2(1059.32, 604)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva30" type="AnimatedSprite2D" parent="."]
+position = Vector2(1102.32, 603)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva31" type="AnimatedSprite2D" parent="."]
+position = Vector2(1145.48, 604.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva32" type="AnimatedSprite2D" parent="."]
+position = Vector2(18.1603, 488.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva33" type="AnimatedSprite2D" parent="."]
+position = Vector2(61.1603, 487.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva113" type="AnimatedSprite2D" parent="."]
+position = Vector2(17, 130)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva114" type="AnimatedSprite2D" parent="."]
+position = Vector2(60, 129)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva115" type="AnimatedSprite2D" parent="."]
+position = Vector2(103.16, 130.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva116" type="AnimatedSprite2D" parent="."]
+position = Vector2(146.16, 129.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva117" type="AnimatedSprite2D" parent="."]
+position = Vector2(190.16, 127.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva118" type="AnimatedSprite2D" parent="."]
+position = Vector2(233.16, 126.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva119" type="AnimatedSprite2D" parent="."]
+position = Vector2(276.321, 128.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva120" type="AnimatedSprite2D" parent="."]
+position = Vector2(319.321, 127.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva121" type="AnimatedSprite2D" parent="."]
+position = Vector2(362.16, 126)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva122" type="AnimatedSprite2D" parent="."]
+position = Vector2(405.16, 125)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva123" type="AnimatedSprite2D" parent="."]
+position = Vector2(448.321, 126.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva124" type="AnimatedSprite2D" parent="."]
+position = Vector2(491.321, 125.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva125" type="AnimatedSprite2D" parent="."]
+position = Vector2(535.321, 123.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva126" type="AnimatedSprite2D" parent="."]
+position = Vector2(578.321, 122.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva127" type="AnimatedSprite2D" parent="."]
+position = Vector2(621.481, 124.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva128" type="AnimatedSprite2D" parent="."]
+position = Vector2(664.481, 123.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva129" type="AnimatedSprite2D" parent="."]
+position = Vector2(708.16, 123)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva130" type="AnimatedSprite2D" parent="."]
+position = Vector2(751.16, 122)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva131" type="AnimatedSprite2D" parent="."]
+position = Vector2(794.321, 123.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva132" type="AnimatedSprite2D" parent="."]
+position = Vector2(837.321, 122.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva133" type="AnimatedSprite2D" parent="."]
+position = Vector2(881.321, 120.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva134" type="AnimatedSprite2D" parent="."]
+position = Vector2(924.321, 119.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva135" type="AnimatedSprite2D" parent="."]
+position = Vector2(967.481, 121.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva136" type="AnimatedSprite2D" parent="."]
+position = Vector2(1010.48, 120.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva137" type="AnimatedSprite2D" parent="."]
+position = Vector2(1053.32, 119)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva138" type="AnimatedSprite2D" parent="."]
+position = Vector2(1096.32, 118)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva139" type="AnimatedSprite2D" parent="."]
+position = Vector2(1139.48, 119.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva34" type="AnimatedSprite2D" parent="."]
+position = Vector2(104.321, 489.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva35" type="AnimatedSprite2D" parent="."]
+position = Vector2(147.321, 488.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva36" type="AnimatedSprite2D" parent="."]
+position = Vector2(191.321, 486.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva37" type="AnimatedSprite2D" parent="."]
+position = Vector2(234.321, 485.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva38" type="AnimatedSprite2D" parent="."]
+position = Vector2(277.481, 487.146)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva39" type="AnimatedSprite2D" parent="."]
+position = Vector2(320.481, 486.146)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva40" type="AnimatedSprite2D" parent="."]
+position = Vector2(363.321, 484.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva41" type="AnimatedSprite2D" parent="."]
+position = Vector2(406.321, 483.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva42" type="AnimatedSprite2D" parent="."]
+position = Vector2(449.481, 485.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva43" type="AnimatedSprite2D" parent="."]
+position = Vector2(492.481, 484.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva44" type="AnimatedSprite2D" parent="."]
+position = Vector2(536.481, 482.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva45" type="AnimatedSprite2D" parent="."]
+position = Vector2(579.481, 481.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva46" type="AnimatedSprite2D" parent="."]
+position = Vector2(622.641, 483.146)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva47" type="AnimatedSprite2D" parent="."]
+position = Vector2(665.641, 482.146)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva48" type="AnimatedSprite2D" parent="."]
+position = Vector2(709.321, 481.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva49" type="AnimatedSprite2D" parent="."]
+position = Vector2(752.321, 480.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva50" type="AnimatedSprite2D" parent="."]
+position = Vector2(795.481, 482.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva51" type="AnimatedSprite2D" parent="."]
+position = Vector2(838.481, 481.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva52" type="AnimatedSprite2D" parent="."]
+position = Vector2(882.481, 479.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva53" type="AnimatedSprite2D" parent="."]
+position = Vector2(925.481, 478.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva54" type="AnimatedSprite2D" parent="."]
+position = Vector2(968.641, 480.146)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva55" type="AnimatedSprite2D" parent="."]
+position = Vector2(1011.64, 479.146)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva56" type="AnimatedSprite2D" parent="."]
+position = Vector2(1054.48, 477.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva57" type="AnimatedSprite2D" parent="."]
+position = Vector2(1097.48, 476.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva58" type="AnimatedSprite2D" parent="."]
+position = Vector2(1140.64, 478.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva59" type="AnimatedSprite2D" parent="."]
+position = Vector2(23, 377)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva60" type="AnimatedSprite2D" parent="."]
+position = Vector2(66, 376)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva61" type="AnimatedSprite2D" parent="."]
+position = Vector2(109.16, 377.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva62" type="AnimatedSprite2D" parent="."]
+position = Vector2(152.16, 376.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva63" type="AnimatedSprite2D" parent="."]
+position = Vector2(196.16, 374.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva64" type="AnimatedSprite2D" parent="."]
+position = Vector2(239.16, 373.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva65" type="AnimatedSprite2D" parent="."]
+position = Vector2(282.321, 375.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva66" type="AnimatedSprite2D" parent="."]
+position = Vector2(325.321, 374.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva67" type="AnimatedSprite2D" parent="."]
+position = Vector2(368.16, 373)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva68" type="AnimatedSprite2D" parent="."]
+position = Vector2(411.16, 372)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva69" type="AnimatedSprite2D" parent="."]
+position = Vector2(454.321, 373.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva70" type="AnimatedSprite2D" parent="."]
+position = Vector2(497.321, 372.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva71" type="AnimatedSprite2D" parent="."]
+position = Vector2(541.321, 370.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva72" type="AnimatedSprite2D" parent="."]
+position = Vector2(584.321, 369.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva73" type="AnimatedSprite2D" parent="."]
+position = Vector2(627.481, 371.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva74" type="AnimatedSprite2D" parent="."]
+position = Vector2(670.481, 370.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva75" type="AnimatedSprite2D" parent="."]
+position = Vector2(714.16, 370)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva76" type="AnimatedSprite2D" parent="."]
+position = Vector2(757.16, 369)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva77" type="AnimatedSprite2D" parent="."]
+position = Vector2(800.321, 370.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva78" type="AnimatedSprite2D" parent="."]
+position = Vector2(843.321, 369.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva79" type="AnimatedSprite2D" parent="."]
+position = Vector2(887.321, 367.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva80" type="AnimatedSprite2D" parent="."]
+position = Vector2(930.321, 366.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva81" type="AnimatedSprite2D" parent="."]
+position = Vector2(973.481, 368.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva82" type="AnimatedSprite2D" parent="."]
+position = Vector2(1016.48, 367.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva83" type="AnimatedSprite2D" parent="."]
+position = Vector2(1059.32, 366)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva84" type="AnimatedSprite2D" parent="."]
+position = Vector2(1102.32, 365)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva85" type="AnimatedSprite2D" parent="."]
+position = Vector2(1145.48, 366.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva86" type="AnimatedSprite2D" parent="."]
+position = Vector2(18.1603, 250.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva87" type="AnimatedSprite2D" parent="."]
+position = Vector2(61.1603, 249.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva88" type="AnimatedSprite2D" parent="."]
+position = Vector2(104.321, 251.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva89" type="AnimatedSprite2D" parent="."]
+position = Vector2(147.321, 250.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva90" type="AnimatedSprite2D" parent="."]
+position = Vector2(191.321, 248.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva91" type="AnimatedSprite2D" parent="."]
+position = Vector2(234.321, 247.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva92" type="AnimatedSprite2D" parent="."]
+position = Vector2(277.481, 249.146)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva93" type="AnimatedSprite2D" parent="."]
+position = Vector2(320.481, 248.146)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva94" type="AnimatedSprite2D" parent="."]
+position = Vector2(363.321, 246.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva95" type="AnimatedSprite2D" parent="."]
+position = Vector2(406.321, 245.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva96" type="AnimatedSprite2D" parent="."]
+position = Vector2(449.481, 247.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva97" type="AnimatedSprite2D" parent="."]
+position = Vector2(492.481, 246.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva98" type="AnimatedSprite2D" parent="."]
+position = Vector2(536.481, 244.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva99" type="AnimatedSprite2D" parent="."]
+position = Vector2(579.481, 243.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva100" type="AnimatedSprite2D" parent="."]
+position = Vector2(622.641, 245.146)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva101" type="AnimatedSprite2D" parent="."]
+position = Vector2(665.641, 244.146)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva102" type="AnimatedSprite2D" parent="."]
+position = Vector2(709.321, 243.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva103" type="AnimatedSprite2D" parent="."]
+position = Vector2(752.321, 242.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva104" type="AnimatedSprite2D" parent="."]
+position = Vector2(795.481, 244.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva105" type="AnimatedSprite2D" parent="."]
+position = Vector2(838.481, 243.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva106" type="AnimatedSprite2D" parent="."]
+position = Vector2(882.481, 241.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva107" type="AnimatedSprite2D" parent="."]
+position = Vector2(925.481, 240.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva108" type="AnimatedSprite2D" parent="."]
+position = Vector2(968.641, 242.146)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva109" type="AnimatedSprite2D" parent="."]
+position = Vector2(1011.64, 241.146)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva110" type="AnimatedSprite2D" parent="."]
+position = Vector2(1054.48, 239.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva111" type="AnimatedSprite2D" parent="."]
+position = Vector2(1097.48, 238.715)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="chuva112" type="AnimatedSprite2D" parent="."]
+position = Vector2(1140.64, 240.431)
+scale = Vector2(0.212866, 0.11962)
+sprite_frames = SubResource("SpriteFrames_myxmb")
+animation = &"chuva"
+autoplay = "chuva"
+frame = 9
+frame_progress = 0.590159
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_fcvgf")
+volume_db = 5.943
+autoplay = true
+parameters/looping = true

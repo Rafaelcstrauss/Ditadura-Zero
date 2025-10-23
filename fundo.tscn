@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://cf36susui4qc8"]
+
+[ext_resource type="Texture2D" uid="uid://brulk1kq4drn7" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/2 Background/Night/1.png" id="1_7g7jf"]
+[ext_resource type="Texture2D" uid="uid://b0lbxttr3b0jy" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/2 Background/Night/2.png" id="2_ekubd"]
+[ext_resource type="Texture2D" uid="uid://csh55kark4yj0" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/2 Background/Night/3.png" id="3_lgf52"]
+[ext_resource type="Texture2D" uid="uid://b4f36p6ohpd5t" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/2 Background/Night/4.png" id="4_tsn8n"]
+[ext_resource type="Texture2D" uid="uid://cmmr0oywxxpou" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/2 Background/Night/5.png" id="5_d821b"]
+
+[node name="Sprite2D" type="Sprite2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(580.5, 325.5)
+scale = Vector2(2.00521, 1.99074)
+texture = ExtResource("1_7g7jf")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(580.5, 325.5)
+scale = Vector2(2.00521, 1.99074)
+texture = ExtResource("2_ekubd")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(580.5, 325.5)
+scale = Vector2(2.00521, 1.99074)
+texture = ExtResource("3_lgf52")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(580.5, 325.5)
+scale = Vector2(2.00521, 1.99074)
+texture = ExtResource("4_tsn8n")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(580.5, 325.5)
+scale = Vector2(2.00521, 1.99074)
+texture = ExtResource("5_d821b")

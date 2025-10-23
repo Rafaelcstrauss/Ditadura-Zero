@@ -1,0 +1,18 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://btb16ybbx2j4f"
+valid=false
+
+[deps]
+
+source_file="res://sprites/parallax-industrial-web/__MACOSX/parallax-industrial-web/Assets/Industrial Theme Music/._industrial.ogg"
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

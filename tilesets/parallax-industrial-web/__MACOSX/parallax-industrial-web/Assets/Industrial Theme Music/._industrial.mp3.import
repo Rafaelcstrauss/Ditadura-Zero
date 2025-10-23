@@ -1,0 +1,18 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b5cbpc2dgb0l8"
+valid=false
+
+[deps]
+
+source_file="res://sprites/parallax-industrial-web/__MACOSX/parallax-industrial-web/Assets/Industrial Theme Music/._industrial.mp3"
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
