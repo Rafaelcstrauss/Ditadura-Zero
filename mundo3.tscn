@@ -1,4 +1,4 @@
-[gd_scene load_steps=117 format=4 uid="uid://buholhmuabdnh"]
+[gd_scene load_steps=118 format=4 uid="uid://buholhmuabdnh"]
 
 [ext_resource type="Texture2D" uid="uid://dk53qij8r4hvw" path="res://tilesets/Action Pack - CITY/Assets/Assets_City.png" id="1_2tn8i"]
 [ext_resource type="Texture2D" uid="uid://hr7rdiy4phew" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/17.png" id="2_fwjue"]
@@ -33,8 +33,9 @@
 [ext_resource type="Texture2D" uid="uid://d3v23enmehv81" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/4.png" id="31_s73gt"]
 [ext_resource type="Texture2D" uid="uid://dk1c5h7w47lj0" path="res://luzSprite.webp" id="32_wvipi"]
 [ext_resource type="PackedScene" uid="uid://occc148cobel" path="res://character_body_2d.tscn" id="33_fwjue"]
-[ext_resource type="PackedScene" uid="uid://dupuog6qpwdlj" path="res://enemy2.tscn" id="34_fyowa"]
+[ext_resource type="PackedScene" uid="uid://cekxxfabp4mk8" path="res://inimigoDois.tscn" id="35_5bboe"]
 [ext_resource type="PackedScene" uid="uid://bl45826wgboie" path="res://portaP.tscn" id="35_bwl7o"]
+[ext_resource type="Script" uid="uid://c0mr4lfrum0d8" path="res://porta_p2.gd" id="35_tg8u3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rqnfl"]
 texture = ExtResource("1_2tn8i")
@@ -3070,9 +3071,10 @@ shape = SubResource("RectangleShape2D_fyowa")
 position = Vector2(-1.5, 563.25)
 shape = SubResource("RectangleShape2D_bwl7o")
 
-[node name="CharacterBody2D2" parent="." instance=ExtResource("34_fyowa")]
-position = Vector2(286, 562)
-scale = Vector2(1.2, 1.2)
-
 [node name="Area2D" parent="." instance=ExtResource("35_bwl7o")]
 position = Vector2(8, 503)
+script = ExtResource("35_tg8u3")
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("35_5bboe")]
+position = Vector2(290, 556)
+scale = Vector2(1.334, 1.334)
