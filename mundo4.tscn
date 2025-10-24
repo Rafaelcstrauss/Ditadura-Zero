@@ -1,45 +1,44 @@
-[gd_scene load_steps=87 format=4 uid="uid://bkwlvwm7g2uog"]
+[gd_scene load_steps=86 format=4 uid="uid://dff3vyv2k8m2l"]
 
-[ext_resource type="Texture2D" uid="uid://dk53qij8r4hvw" path="res://tilesets/Action Pack - CITY/Assets/Assets_City.png" id="1_1s624"]
-[ext_resource type="Texture2D" uid="uid://hr7rdiy4phew" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/17.png" id="2_54eo1"]
-[ext_resource type="Texture2D" uid="uid://c7kvm7hbuxisw" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/18.png" id="3_8fstf"]
-[ext_resource type="Texture2D" uid="uid://0d6mkybgjarg" path="res://tilesets/Sidescroller Shooter - Central City/Assets/Buildings.png" id="4_tiaqt"]
-[ext_resource type="Texture2D" uid="uid://bawsi6hc8lftv" path="res://tilesets/Sidescroller Shooter - Central City/Assets/Props-01.png" id="5_jh8mm"]
-[ext_resource type="Texture2D" uid="uid://84axo0ow0hh8" path="res://tilesets/Sidescroller Shooter - Central City/Assets/Tiles.png" id="6_k05mo"]
-[ext_resource type="Texture2D" uid="uid://civwim1qdwnvr" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/5.png" id="7_iwmnf"]
-[ext_resource type="PackedScene" uid="uid://occc148cobel" path="res://character_body_2d.tscn" id="7_stirk"]
-[ext_resource type="Texture2D" uid="uid://dk1c5h7w47lj0" path="res://luzSprite.webp" id="8_54eo1"]
-[ext_resource type="Texture2D" uid="uid://d37s7xmerucj3" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/6.png" id="8_rueum"]
-[ext_resource type="Texture2D" uid="uid://canxejsh22ppg" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/7.png" id="9_w74oi"]
-[ext_resource type="Texture2D" uid="uid://o1wqrw5n2dpn" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/8.png" id="10_x0wpa"]
-[ext_resource type="Texture2D" uid="uid://bayc2pr1ml3y0" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/9.png" id="11_frqkd"]
-[ext_resource type="Texture2D" uid="uid://dh486o3tne3fd" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/10.png" id="12_e5a63"]
-[ext_resource type="Texture2D" uid="uid://w8rfp252y525" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/11.png" id="13_8bfid"]
-[ext_resource type="Texture2D" uid="uid://csoi1jvylftns" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/12.png" id="14_pec1o"]
-[ext_resource type="Texture2D" uid="uid://cmmnmjltnkpqg" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/13.png" id="15_3dphd"]
-[ext_resource type="Texture2D" uid="uid://b6ncnmndv5ega" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/14.png" id="16_1pngp"]
-[ext_resource type="Texture2D" uid="uid://cp3y3nwb0bhjf" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/15.png" id="17_b252o"]
-[ext_resource type="Texture2D" uid="uid://cte8fdym8di8r" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/16.png" id="18_yjdyx"]
-[ext_resource type="Texture2D" uid="uid://ei0hldqtu10j" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/19.png" id="19_m7b4g"]
-[ext_resource type="Texture2D" uid="uid://coa514ubu8qv1" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/20.png" id="20_tv378"]
-[ext_resource type="Texture2D" uid="uid://dp44dekmyy03h" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/21.png" id="21_jy6tu"]
-[ext_resource type="Texture2D" uid="uid://vbwn7vuwjm11" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/22.png" id="22_b7kkk"]
-[ext_resource type="Texture2D" uid="uid://bpmhoukx6gtc0" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/23.png" id="23_cm08p"]
-[ext_resource type="Texture2D" uid="uid://ciu0a3a5i1bvq" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/24.png" id="24_bw5am"]
-[ext_resource type="Texture2D" uid="uid://djf03p4tbiics" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/25.png" id="25_vg34x"]
-[ext_resource type="Texture2D" uid="uid://81cxu05jq2br" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/26.png" id="26_1ucjh"]
-[ext_resource type="Texture2D" uid="uid://b2osey7lerhfx" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/27.png" id="27_bdw11"]
-[ext_resource type="Texture2D" uid="uid://tiof0kb6c38g" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/1.png" id="28_n8loe"]
-[ext_resource type="Texture2D" uid="uid://bhmgm12ay8m7t" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/2.png" id="29_fm1mn"]
-[ext_resource type="Texture2D" uid="uid://1v5y7belxapn" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/3.png" id="30_230jp"]
-[ext_resource type="Texture2D" uid="uid://d3v23enmehv81" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/4.png" id="31_3sxy3"]
-[ext_resource type="PackedScene" uid="uid://bl45826wgboie" path="res://portaP.tscn" id="34_rueum"]
-[ext_resource type="AudioStream" uid="uid://n5skhuuo1n4c" path="res://Rain falling steadily on a calm lake, creating gentle ripples..mp3" id="35_w74oi"]
-[ext_resource type="AudioStream" uid="uid://cxlvgpy4ua5it" path="res://industrial-noise-hum-of-production.mp3" id="36_x0wpa"]
-[ext_resource type="PackedScene" uid="uid://7lhs0bvgpipi" path="res://menusub/submenu.tscn" id="37_frqkd"]
+[ext_resource type="Texture2D" uid="uid://dk53qij8r4hvw" path="res://tilesets/Action Pack - CITY/Assets/Assets_City.png" id="1_yg1wj"]
+[ext_resource type="Texture2D" uid="uid://hr7rdiy4phew" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/17.png" id="2_81615"]
+[ext_resource type="Texture2D" uid="uid://c7kvm7hbuxisw" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/18.png" id="3_oucu0"]
+[ext_resource type="Texture2D" uid="uid://0d6mkybgjarg" path="res://tilesets/Sidescroller Shooter - Central City/Assets/Buildings.png" id="4_l15g1"]
+[ext_resource type="Texture2D" uid="uid://bawsi6hc8lftv" path="res://tilesets/Sidescroller Shooter - Central City/Assets/Props-01.png" id="5_4qlok"]
+[ext_resource type="Texture2D" uid="uid://84axo0ow0hh8" path="res://tilesets/Sidescroller Shooter - Central City/Assets/Tiles.png" id="6_hyqtt"]
+[ext_resource type="Texture2D" uid="uid://civwim1qdwnvr" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/5.png" id="7_yugeh"]
+[ext_resource type="Texture2D" uid="uid://d37s7xmerucj3" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/6.png" id="8_ue2u3"]
+[ext_resource type="Texture2D" uid="uid://canxejsh22ppg" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/7.png" id="9_v8jrh"]
+[ext_resource type="Texture2D" uid="uid://o1wqrw5n2dpn" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/8.png" id="10_vw1cs"]
+[ext_resource type="Texture2D" uid="uid://bayc2pr1ml3y0" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/9.png" id="11_a4utw"]
+[ext_resource type="Texture2D" uid="uid://dh486o3tne3fd" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/10.png" id="12_hrmnd"]
+[ext_resource type="Texture2D" uid="uid://w8rfp252y525" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/11.png" id="13_iyvex"]
+[ext_resource type="Texture2D" uid="uid://csoi1jvylftns" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/12.png" id="14_cj7tj"]
+[ext_resource type="Texture2D" uid="uid://cmmnmjltnkpqg" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/13.png" id="15_0xam8"]
+[ext_resource type="Texture2D" uid="uid://b6ncnmndv5ega" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/14.png" id="16_w2uyd"]
+[ext_resource type="Texture2D" uid="uid://cp3y3nwb0bhjf" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/15.png" id="17_kx68q"]
+[ext_resource type="Texture2D" uid="uid://cte8fdym8di8r" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/16.png" id="18_le1kb"]
+[ext_resource type="Texture2D" uid="uid://ei0hldqtu10j" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/19.png" id="19_h51kv"]
+[ext_resource type="Texture2D" uid="uid://coa514ubu8qv1" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/20.png" id="20_2svhq"]
+[ext_resource type="Texture2D" uid="uid://dp44dekmyy03h" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/21.png" id="21_orex7"]
+[ext_resource type="Texture2D" uid="uid://vbwn7vuwjm11" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/22.png" id="22_dmv12"]
+[ext_resource type="Texture2D" uid="uid://bpmhoukx6gtc0" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/23.png" id="23_1xnfy"]
+[ext_resource type="Texture2D" uid="uid://ciu0a3a5i1bvq" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/24.png" id="24_mlwpq"]
+[ext_resource type="Texture2D" uid="uid://djf03p4tbiics" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/25.png" id="25_m2u4f"]
+[ext_resource type="Texture2D" uid="uid://81cxu05jq2br" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/26.png" id="26_ws44v"]
+[ext_resource type="Texture2D" uid="uid://b2osey7lerhfx" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/27.png" id="27_lq4sk"]
+[ext_resource type="Texture2D" uid="uid://tiof0kb6c38g" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/1.png" id="28_dinp1"]
+[ext_resource type="Texture2D" uid="uid://bhmgm12ay8m7t" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/2.png" id="29_udnpp"]
+[ext_resource type="Texture2D" uid="uid://1v5y7belxapn" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/3.png" id="30_nry7p"]
+[ext_resource type="Texture2D" uid="uid://d3v23enmehv81" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/4.png" id="31_xk352"]
+[ext_resource type="PackedScene" uid="uid://occc148cobel" path="res://character_body_2d.tscn" id="32_dw1lm"]
+[ext_resource type="Texture2D" uid="uid://dk1c5h7w47lj0" path="res://luzSprite.webp" id="33_peeue"]
+[ext_resource type="PackedScene" uid="uid://bl45826wgboie" path="res://portaP.tscn" id="34_35dwf"]
+[ext_resource type="AudioStream" uid="uid://n5skhuuo1n4c" path="res://Rain falling steadily on a calm lake, creating gentle ripples..mp3" id="35_rgnnh"]
+[ext_resource type="AudioStream" uid="uid://cxlvgpy4ua5it" path="res://industrial-noise-hum-of-production.mp3" id="36_8v37v"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x0wpa"]
-texture = ExtResource("1_1s624")
+texture = ExtResource("1_yg1wj")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -227,20 +226,20 @@ texture = ExtResource("1_1s624")
 8:13/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_frqkd"]
-texture = ExtResource("2_54eo1")
+texture = ExtResource("2_81615")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
 3:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e5a63"]
-texture = ExtResource("3_8fstf")
+texture = ExtResource("3_oucu0")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8bfid"]
-texture = ExtResource("4_tiaqt")
+texture = ExtResource("4_l15g1")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -527,7 +526,7 @@ texture = ExtResource("4_tiaqt")
 2:14/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pec1o"]
-texture = ExtResource("5_jh8mm")
+texture = ExtResource("5_4qlok")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -628,7 +627,7 @@ texture = ExtResource("5_jh8mm")
 4:13/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3dphd"]
-texture = ExtResource("6_k05mo")
+texture = ExtResource("6_hyqtt")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -693,7 +692,7 @@ sources/4 = SubResource("TileSetAtlasSource_pec1o")
 sources/5 = SubResource("TileSetAtlasSource_3dphd")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1pngp"]
-texture = ExtResource("4_tiaqt")
+texture = ExtResource("4_l15g1")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -980,7 +979,7 @@ texture = ExtResource("4_tiaqt")
 2:14/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b252o"]
-texture = ExtResource("5_jh8mm")
+texture = ExtResource("5_4qlok")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1081,49 +1080,49 @@ texture = ExtResource("5_jh8mm")
 4:13/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yjdyx"]
-texture = ExtResource("7_iwmnf")
+texture = ExtResource("7_yugeh")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m7b4g"]
-texture = ExtResource("8_rueum")
+texture = ExtResource("8_ue2u3")
 texture_region_size = Vector2i(5, 3)
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tv378"]
-texture = ExtResource("9_w74oi")
+texture = ExtResource("9_v8jrh")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jy6tu"]
-texture = ExtResource("10_x0wpa")
+texture = ExtResource("10_vw1cs")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b7kkk"]
-texture = ExtResource("11_frqkd")
+texture = ExtResource("11_a4utw")
 0:0/0 = 0
 1:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cm08p"]
-texture = ExtResource("12_e5a63")
+texture = ExtResource("12_hrmnd")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bw5am"]
-texture = ExtResource("13_8bfid")
+texture = ExtResource("13_iyvex")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vg34x"]
-texture = ExtResource("14_pec1o")
+texture = ExtResource("14_cj7tj")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1ucjh"]
-texture = ExtResource("15_3dphd")
+texture = ExtResource("15_0xam8")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bdw11"]
-texture = ExtResource("16_1pngp")
+texture = ExtResource("16_w2uyd")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n8loe"]
-texture = ExtResource("6_k05mo")
+texture = ExtResource("6_hyqtt")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1180,50 +1179,50 @@ texture = ExtResource("6_k05mo")
 5:8/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fm1mn"]
-texture = ExtResource("17_b252o")
+texture = ExtResource("17_kx68q")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_230jp"]
-texture = ExtResource("18_yjdyx")
+texture = ExtResource("18_le1kb")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3sxy3"]
-texture = ExtResource("2_54eo1")
+texture = ExtResource("2_81615")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
 3:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dh73j"]
-texture = ExtResource("3_8fstf")
+texture = ExtResource("3_oucu0")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8f3yq"]
-texture = ExtResource("19_m7b4g")
+texture = ExtResource("19_h51kv")
 0:0/0 = 0
 1:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qtbxc"]
-texture = ExtResource("20_tv378")
+texture = ExtResource("20_2svhq")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sfloo"]
-texture = ExtResource("21_jy6tu")
+texture = ExtResource("21_orex7")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mwfgk"]
-texture = ExtResource("22_b7kkk")
+texture = ExtResource("22_dmv12")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fjp3f"]
-texture = ExtResource("23_cm08p")
+texture = ExtResource("23_1xnfy")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4s1fb"]
-texture = ExtResource("24_bw5am")
+texture = ExtResource("24_mlwpq")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1242,14 +1241,14 @@ texture = ExtResource("24_bw5am")
 3:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ngllr"]
-texture = ExtResource("2_54eo1")
+texture = ExtResource("2_81615")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
 3:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b08ct"]
-texture = ExtResource("25_vg34x")
+texture = ExtResource("25_m2u4f")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1268,7 +1267,7 @@ texture = ExtResource("25_vg34x")
 3:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nb4h2"]
-texture = ExtResource("26_1ucjh")
+texture = ExtResource("26_ws44v")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1283,7 +1282,7 @@ texture = ExtResource("26_1ucjh")
 3:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gfmhl"]
-texture = ExtResource("27_bdw11")
+texture = ExtResource("27_lq4sk")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1294,13 +1293,13 @@ texture = ExtResource("27_bdw11")
 3:1/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mosp7"]
-texture = ExtResource("3_8fstf")
+texture = ExtResource("3_oucu0")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_elufk"]
-texture = ExtResource("1_1s624")
+texture = ExtResource("1_yg1wj")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1488,18 +1487,18 @@ texture = ExtResource("1_1s624")
 8:13/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qarjb"]
-texture = ExtResource("28_n8loe")
+texture = ExtResource("28_dinp1")
 0:0/0 = 0
 1:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7b4n4"]
-texture = ExtResource("29_fm1mn")
+texture = ExtResource("29_udnpp")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7dv7q"]
-texture = ExtResource("30_230jp")
+texture = ExtResource("30_nry7p")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_co8g2"]
-texture = ExtResource("31_3sxy3")
+texture = ExtResource("31_xk352")
 
 [sub_resource type="TileSet" id="TileSet_42qp8"]
 sources/0 = SubResource("TileSetAtlasSource_1pngp")
@@ -1537,12 +1536,12 @@ sources/31 = SubResource("TileSetAtlasSource_nb4h2")
 sources/32 = SubResource("TileSetAtlasSource_gfmhl")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vbnfl"]
-texture = ExtResource("8_rueum")
+texture = ExtResource("8_ue2u3")
 texture_region_size = Vector2i(5, 3)
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hpo62"]
-texture = ExtResource("1_1s624")
+texture = ExtResource("1_yg1wj")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1730,7 +1729,7 @@ texture = ExtResource("1_1s624")
 8:13/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ls6l2"]
-texture = ExtResource("4_tiaqt")
+texture = ExtResource("4_l15g1")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -2022,7 +2021,7 @@ sources/1 = SubResource("TileSetAtlasSource_hpo62")
 sources/2 = SubResource("TileSetAtlasSource_ls6l2")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uff8m"]
-texture = ExtResource("4_tiaqt")
+texture = ExtResource("4_l15g1")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -2317,7 +2316,7 @@ size = Vector2(601.5, 16)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x0wpa"]
 size = Vector2(143, 9)
 
-[node name="Node2D2" type="Node2D"]
+[node name="Node2D" type="Node2D"]
 
 [node name="Predio" type="TileMapLayer" parent="."]
 texture_filter = 1
@@ -2342,8 +2341,8 @@ texture_filter = 1
 tile_map_data = PackedByteArray("AAAdACIAAAATAAcAAAAdACMAAAATAAgAAAAdACQAAAATAAkAAAAdACUAAAATAAoAAAAdACYAAAATAAsAAAAeACIAAAAUAAcAAAAeACMAAAAUAAgAAAAeACQAAAAUAAkAAAAeACUAAAAUAAoAAAAeACYAAAAUAAsAAAAfACIAAAAVAAcAAAAfACMAAAAVAAgAAAAfACQAAAAVAAkAAAAfACUAAAAVAAoAAAAfACYAAAAVAAsAAAA=")
 tile_set = SubResource("TileSet_e5a63")
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("7_stirk")]
-position = Vector2(49, 534)
+[node name="CharacterBody2D" parent="." instance=ExtResource("32_dw1lm")]
+position = Vector2(487, 537)
 scale = Vector2(1.33371, 1.33371)
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
@@ -2358,7 +2357,7 @@ position_smoothing_speed = 2.5
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="chão" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(320.25, 632)
+position = Vector2(301.25, 632)
 shape = SubResource("RectangleShape2D_1s624")
 
 [node name="parede1" type="CollisionShape2D" parent="StaticBody2D"]
@@ -2378,40 +2377,40 @@ color = Color(0.513233, 0.513233, 0.513233, 1)
 position = Vector2(93, 536)
 scale = Vector2(0.935547, 1.18359)
 energy = 2.0
-texture = ExtResource("8_54eo1")
+texture = ExtResource("33_peeue")
 
 [node name="PointLight2D" type="PointLight2D" parent="PointLight2D"]
 position = Vector2(213.779, -10.1387)
 scale = Vector2(0.935547, 1.18359)
 energy = 2.0
-texture = ExtResource("8_54eo1")
+texture = ExtResource("33_peeue")
 
 [node name="PointLight2D" type="PointLight2D" parent="PointLight2D/PointLight2D"]
 position = Vector2(243.36, -1.42766)
 scale = Vector2(0.935547, 1.18359)
 energy = 2.0
-texture = ExtResource("8_54eo1")
+texture = ExtResource("33_peeue")
 
 [node name="PointLight2D2" type="PointLight2D" parent="PointLight2D/PointLight2D/PointLight2D"]
 position = Vector2(-100.142, 36.7893)
 scale = Vector2(0.18374, 0.0792922)
 color = Color(0.975664, 5.60723e-06, 2.11775e-06, 1)
 energy = 1.5
-texture = ExtResource("8_54eo1")
+texture = ExtResource("33_peeue")
 
 [node name="PointLight2D3" type="PointLight2D" parent="PointLight2D/PointLight2D/PointLight2D"]
 position = Vector2(-584.977, 37.3924)
 scale = Vector2(0.18374, 0.0792922)
 color = Color(0.975664, 5.60723e-06, 2.11775e-06, 1)
 energy = 1.5
-texture = ExtResource("8_54eo1")
+texture = ExtResource("33_peeue")
 
 [node name="PointLight2D4" type="PointLight2D" parent="PointLight2D/PointLight2D/PointLight2D"]
 position = Vector2(72.0536, 37.9955)
 scale = Vector2(0.18374, 0.0792922)
 color = Color(0.975664, 5.60723e-06, 2.11775e-06, 1)
 energy = 1.5
-texture = ExtResource("8_54eo1")
+texture = ExtResource("33_peeue")
 
 [node name="PointLight2D5" type="PointLight2D" parent="PointLight2D/PointLight2D/PointLight2D"]
 light_mask = 2
@@ -2420,14 +2419,14 @@ position = Vector2(-256.462, 12.6652)
 scale = Vector2(0.18374, 0.0792922)
 color = Color(0.612299, 6.97896e-07, 7.70092e-07, 1)
 energy = 4.75
-texture = ExtResource("8_54eo1")
+texture = ExtResource("33_peeue")
 
-[node name="Area2D" parent="." instance=ExtResource("34_rueum")]
+[node name="Area2D" parent="." instance=ExtResource("34_35dwf")]
 position = Vector2(408, 500)
 
 [node name="chuva de fundo" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(-42, 614)
-stream = ExtResource("35_w74oi")
+stream = ExtResource("35_rgnnh")
 volume_db = 24.0
 autoplay = true
 max_distance = 200.0
@@ -2435,9 +2434,7 @@ parameters/looping = true
 
 [node name="som de fundo" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(-42, 614)
-stream = ExtResource("36_x0wpa")
+stream = ExtResource("36_8v37v")
 volume_db = 5.0
 autoplay = true
 parameters/looping = true
-
-[node name="submenu" parent="." instance=ExtResource("37_frqkd")]

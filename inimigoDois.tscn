@@ -1,136 +1,136 @@
-[gd_scene load_steps=44 format=3 uid="uid://dupuog6qpwdlj"]
+[gd_scene load_steps=44 format=3 uid="uid://cekxxfabp4mk8"]
 
-[ext_resource type="Script" uid="uid://c3aingykbkqo6" path="res://enemy.gd" id="1_od1td"]
-[ext_resource type="Texture2D" uid="uid://bmeppbu5jc8at" path="res://craftpix-net-507107-free-soldier-sprite-sheets-pixel-art/Soldier_3/Walk.png" id="2_od1td"]
-[ext_resource type="Texture2D" uid="uid://bw8h3yo3cem3g" path="res://craftpix-net-507107-free-soldier-sprite-sheets-pixel-art/Soldier_3/Attacck.png" id="3_050u2"]
-[ext_resource type="Texture2D" uid="uid://dokm4uknrap85" path="res://craftpix-net-507107-free-soldier-sprite-sheets-pixel-art/Soldier_3/Dead.png" id="4_haxn7"]
-[ext_resource type="Texture2D" uid="uid://dkkib2bp25nox" path="res://craftpix-net-507107-free-soldier-sprite-sheets-pixel-art/Soldier_3/Idle.png" id="5_k6uer"]
-[ext_resource type="Texture2D" uid="uid://diyy5qlty8n3r" path="res://craftpix-net-507107-free-soldier-sprite-sheets-pixel-art/Soldier_3/Run.png" id="6_lr6v3"]
-[ext_resource type="Texture2D" uid="uid://de6neo54igsmb" path="res://21564244-vermelho-exclamacao-marca-dentro-pixel-arte-estilo-vetor-removebg-preview.png" id="7_k030n"]
-[ext_resource type="Texture2D" uid="uid://dk1c5h7w47lj0" path="res://luzSprite.webp" id="8_8cfed"]
+[ext_resource type="Script" uid="uid://d1q5s18a1jica" path="res://inimigo_dois.gd" id="1_43t82"]
+[ext_resource type="Texture2D" uid="uid://bmeppbu5jc8at" path="res://craftpix-net-507107-free-soldier-sprite-sheets-pixel-art/Soldier_3/Walk.png" id="2_npka5"]
+[ext_resource type="Texture2D" uid="uid://bw8h3yo3cem3g" path="res://craftpix-net-507107-free-soldier-sprite-sheets-pixel-art/Soldier_3/Attacck.png" id="3_pbxjf"]
+[ext_resource type="Texture2D" uid="uid://dokm4uknrap85" path="res://craftpix-net-507107-free-soldier-sprite-sheets-pixel-art/Soldier_3/Dead.png" id="4_hh6lu"]
+[ext_resource type="Texture2D" uid="uid://dkkib2bp25nox" path="res://craftpix-net-507107-free-soldier-sprite-sheets-pixel-art/Soldier_3/Idle.png" id="5_5xms8"]
+[ext_resource type="Texture2D" uid="uid://diyy5qlty8n3r" path="res://craftpix-net-507107-free-soldier-sprite-sheets-pixel-art/Soldier_3/Run.png" id="6_yfh67"]
+[ext_resource type="Texture2D" uid="uid://de6neo54igsmb" path="res://21564244-vermelho-exclamacao-marca-dentro-pixel-arte-estilo-vetor-removebg-preview.png" id="7_a2rk3"]
+[ext_resource type="Texture2D" uid="uid://dk1c5h7w47lj0" path="res://luzSprite.webp" id="8_7juhg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ikqiw"]
-atlas = ExtResource("2_od1td")
+atlas = ExtResource("2_npka5")
 region = Rect2(0, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k030n"]
-atlas = ExtResource("2_od1td")
+atlas = ExtResource("2_npka5")
 region = Rect2(128, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8cfed"]
-atlas = ExtResource("2_od1td")
+atlas = ExtResource("2_npka5")
 region = Rect2(256, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yqg6l"]
-atlas = ExtResource("2_od1td")
+atlas = ExtResource("2_npka5")
 region = Rect2(384, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_736e0"]
-atlas = ExtResource("2_od1td")
+atlas = ExtResource("2_npka5")
 region = Rect2(512, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ttxbd"]
-atlas = ExtResource("2_od1td")
+atlas = ExtResource("2_npka5")
 region = Rect2(640, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7dwu3"]
-atlas = ExtResource("2_od1td")
+atlas = ExtResource("2_npka5")
 region = Rect2(768, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f4y1y"]
-atlas = ExtResource("2_od1td")
+atlas = ExtResource("2_npka5")
 region = Rect2(896, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2wexu"]
-atlas = ExtResource("3_050u2")
+atlas = ExtResource("3_pbxjf")
 region = Rect2(0, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uqsp0"]
-atlas = ExtResource("3_050u2")
+atlas = ExtResource("3_pbxjf")
 region = Rect2(128, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6asso"]
-atlas = ExtResource("3_050u2")
+atlas = ExtResource("3_pbxjf")
 region = Rect2(256, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hqqrx"]
-atlas = ExtResource("3_050u2")
+atlas = ExtResource("3_pbxjf")
 region = Rect2(384, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rujom"]
-atlas = ExtResource("3_050u2")
+atlas = ExtResource("3_pbxjf")
 region = Rect2(512, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v6ftq"]
-atlas = ExtResource("4_haxn7")
+atlas = ExtResource("4_hh6lu")
 region = Rect2(0, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ew1hi"]
-atlas = ExtResource("4_haxn7")
+atlas = ExtResource("4_hh6lu")
 region = Rect2(128, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6uwms"]
-atlas = ExtResource("4_haxn7")
+atlas = ExtResource("4_hh6lu")
 region = Rect2(256, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b4te7"]
-atlas = ExtResource("4_haxn7")
+atlas = ExtResource("4_hh6lu")
 region = Rect2(384, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tvddx"]
-atlas = ExtResource("4_haxn7")
+atlas = ExtResource("4_hh6lu")
 region = Rect2(512, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6y6c2"]
-atlas = ExtResource("5_k6uer")
+atlas = ExtResource("5_5xms8")
 region = Rect2(0, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yiqxi"]
-atlas = ExtResource("5_k6uer")
+atlas = ExtResource("5_5xms8")
 region = Rect2(128, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ye0w1"]
-atlas = ExtResource("5_k6uer")
+atlas = ExtResource("5_5xms8")
 region = Rect2(256, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_46h7q"]
-atlas = ExtResource("5_k6uer")
+atlas = ExtResource("5_5xms8")
 region = Rect2(384, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jem56"]
-atlas = ExtResource("5_k6uer")
+atlas = ExtResource("5_5xms8")
 region = Rect2(512, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u41hv"]
-atlas = ExtResource("5_k6uer")
+atlas = ExtResource("5_5xms8")
 region = Rect2(640, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i8wmn"]
-atlas = ExtResource("5_k6uer")
+atlas = ExtResource("5_5xms8")
 region = Rect2(768, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nha7p"]
-atlas = ExtResource("6_lr6v3")
+atlas = ExtResource("6_yfh67")
 region = Rect2(0, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1oxq1"]
-atlas = ExtResource("6_lr6v3")
+atlas = ExtResource("6_yfh67")
 region = Rect2(128, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qy7ii"]
-atlas = ExtResource("6_lr6v3")
+atlas = ExtResource("6_yfh67")
 region = Rect2(256, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m1x5r"]
-atlas = ExtResource("6_lr6v3")
+atlas = ExtResource("6_yfh67")
 region = Rect2(384, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dc2w2"]
-atlas = ExtResource("6_lr6v3")
+atlas = ExtResource("6_yfh67")
 region = Rect2(512, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xd6cy"]
-atlas = ExtResource("6_lr6v3")
+atlas = ExtResource("6_yfh67")
 region = Rect2(640, 0, 128, 128)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_e1ltt"]
@@ -264,9 +264,9 @@ radius = 119.151
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_epg4t"]
 size = Vector2(59, 5)
 
-[node name="CharacterBody2D" type="CharacterBody2D" groups=["enemy"]]
+[node name="CharacterBody2D2" type="CharacterBody2D" groups=["enemy"]]
 texture_filter = 1
-script = ExtResource("1_od1td")
+script = ExtResource("1_43t82")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(4, 7)
@@ -308,7 +308,7 @@ shape = SubResource("RectangleShape2D_epg4t")
 texture_filter = 1
 position = Vector2(3, -4)
 scale = Vector2(0.0723298, 0.0723298)
-texture = ExtResource("7_k030n")
+texture = ExtResource("7_a2rk3")
 
 [node name="ExclamacaoTimer" type="Timer" parent="."]
 
@@ -317,7 +317,7 @@ position = Vector2(2.5, 17)
 scale = Vector2(0.587254, 0.587254)
 color = Color(0.873478, 0, 0.14886, 1)
 energy = 0.6
-texture = ExtResource("8_8cfed")
+texture = ExtResource("8_7juhg")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="body_entered" from="visão" to="." method="_on_visão_body_entered"]

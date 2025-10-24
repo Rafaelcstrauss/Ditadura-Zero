@@ -33,10 +33,10 @@
 [ext_resource type="Texture2D" uid="uid://d3v23enmehv81" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/4.png" id="31_s73gt"]
 [ext_resource type="Texture2D" uid="uid://dk1c5h7w47lj0" path="res://luzSprite.webp" id="32_wvipi"]
 [ext_resource type="PackedScene" uid="uid://occc148cobel" path="res://character_body_2d.tscn" id="33_fwjue"]
-[ext_resource type="PackedScene" uid="uid://dupuog6qpwdlj" path="res://enemy2.tscn" id="34_fyowa"]
+[ext_resource type="PackedScene" uid="uid://cekxxfabp4mk8" path="res://inimigoDois.tscn" id="35_5bboe"]
 [ext_resource type="PackedScene" uid="uid://bl45826wgboie" path="res://portaP.tscn" id="35_bwl7o"]
 [ext_resource type="PackedScene" uid="uid://7lhs0bvgpipi" path="res://menusub/submenu.tscn" id="36_5bboe"]
-
+[ext_resource type="Script" uid="uid://c0mr4lfrum0d8" path="res://porta_p2.gd" id="35_tg8u3"]
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rqnfl"]
 texture = ExtResource("1_2tn8i")
 0:0/0 = 0
@@ -2965,7 +2965,7 @@ size = Vector2(163, 13.6875)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bwl7o"]
 size = Vector2(5, 170.5)
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D3" type="Node2D"]
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color(0.513233, 0.513233, 0.513233, 1)
@@ -3071,11 +3071,12 @@ shape = SubResource("RectangleShape2D_fyowa")
 position = Vector2(-1.5, 563.25)
 shape = SubResource("RectangleShape2D_bwl7o")
 
-[node name="CharacterBody2D2" parent="." instance=ExtResource("34_fyowa")]
-position = Vector2(286, 562)
-scale = Vector2(1.2, 1.2)
-
 [node name="Area2D" parent="." instance=ExtResource("35_bwl7o")]
 position = Vector2(8, 503)
 
 [node name="submenu" parent="." instance=ExtResource("36_5bboe")]
+script = ExtResource("35_tg8u3")
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("35_5bboe")]
+position = Vector2(290, 556)
+scale = Vector2(1.334, 1.334)
