@@ -264,7 +264,7 @@ radius = 119.151
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_epg4t"]
 size = Vector2(59, 5)
 
-[node name="CharacterBody2D" type="CharacterBody2D" groups=["enemy"]]
+[node name="CharacterBody2D2" type="CharacterBody2D" groups=["enemy"]]
 texture_filter = 1
 script = ExtResource("1_43t82")
 
