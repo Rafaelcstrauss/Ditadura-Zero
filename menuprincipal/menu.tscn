@@ -1,0 +1,68 @@
+[gd_scene load_steps=6 format=3 uid="uid://be71cfqjwmbpq"]
+
+[ext_resource type="FontFile" uid="uid://b05thj7kfy38b" path="res://VT323-Regular.ttf" id="1_lti8b"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7vrkn"]
+bg_color = Color(0.843137, 0.866667, 0.109804, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rhts7"]
+bg_color = Color(0.121569, 0.980392, 0.407843, 0)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0.407843, 0.803922, 0.717647, 0.203922)
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fu7sn"]
+bg_color = Color(0.843137, 0.866667, 0.109804, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jix8l"]
+bg_color = Color(0.843137, 0.866667, 0.109804, 0)
+
+[node name="MainButtons" type="VBoxContainer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -408.0
+offset_top = -197.0
+offset_right = 405.0
+offset_bottom = 233.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0.913725, 0.921569, 0.227451, 1)
+theme_override_colors/font_color = Color(0, 0.929412, 0.552941, 1)
+theme_override_fonts/font = ExtResource("1_lti8b")
+theme_override_font_sizes/font_size = 34
+theme_override_styles/hover = SubResource("StyleBoxFlat_7vrkn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
+text = "START GAME"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0.913725, 0.921569, 0.227451, 1)
+theme_override_colors/font_color = Color(0, 0.929412, 0.552941, 1)
+theme_override_fonts/font = ExtResource("1_lti8b")
+theme_override_font_sizes/font_size = 34
+theme_override_styles/hover = SubResource("StyleBoxFlat_fu7sn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
+text = "Options"
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0.913725, 0.921569, 0.227451, 1)
+theme_override_colors/font_color = Color(0, 0.929412, 0.552941, 1)
+theme_override_fonts/font = ExtResource("1_lti8b")
+theme_override_font_sizes/font_size = 34
+theme_override_styles/hover = SubResource("StyleBoxFlat_jix8l")
+theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
+text = "EXIT"

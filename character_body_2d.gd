@@ -13,7 +13,7 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var current_health: float = max_health
 var is_invulnerable: bool = false
 const INVULNERABILITY_TIME = 0.5
-
+@export var game_over_ui_scene: PackedScene = preload("res://game_over_ui.tscn") 
 # --- PROPRIEDADES DE ATAQUE DO PLAYER ---
 @export var attack_damage: float = 5.0
 @export var attack_windup_time: float = 0.2 
@@ -292,6 +292,29 @@ func take_damage(amount: float):
 
 func die():
 	print("Player derrotado! Game Over.")
+	
+	# 1. Pausa o jogo
+	get_tree().paused = true
+	
+	# 2. Desativa o personagem para que ele não responda a input ou física
+	set_process_mode(Node.PROCESS_MODE_DISABLED)
+	
+	# 3. Emite um sinal visual (opcional, como trocar a modulação ou animação)
+	modulate = Color.GRAY
+	# Se você tiver uma animação de morte, use:
+	# animated_sprite.play("death") 
+	
+	# 4. Instancia e adiciona a tela de Game Over
+	if game_over_ui_scene:
+		var game_over_ui = game_over_ui_scene.instantiate()
+		get_tree().root.add_child(game_over_ui)
+	else:
+		# Se a cena não foi carregada corretamente, apenas reinicia para evitar travamento
+		get_tree().reload_current_scene()
+	
+	# 5. O nó do jogador será liberado após o retry ser clicado (na UI) 
+	#    ou o jogador pode simplesmente ser invisível.
+	#    É MELHOR DEIXAR O JOGADOR SER REMOVIDO PELA UI, MAS AQUI O REMOVEMOS IMEDIATAMENTE.
 	queue_free()
 
 func _on_invulnerability_timer_timeout():

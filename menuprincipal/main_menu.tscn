@@ -1,0 +1,280 @@
+[gd_scene load_steps=20 format=3 uid="uid://dts12yg34cyxn"]
+
+[ext_resource type="Texture2D" uid="uid://jgyiyjprhg13" path="res://menuprincipal/assets/profecia.png" id="1_06t4h"]
+[ext_resource type="Script" uid="uid://d32dwed5exyjd" path="res://menuprincipal/main_menu.gd" id="1_fu7sn"]
+[ext_resource type="FontFile" uid="uid://b05thj7kfy38b" path="res://menusub/VT323-Regular.ttf" id="2_7vrkn"]
+[ext_resource type="Shader" uid="uid://bgvkjsemqsdg8" path="res://menuprincipal/main_menu.gdshader" id="2_qe12f"]
+[ext_resource type="AudioStream" uid="uid://bdaw2x8yveup0" path="res://menusub/musica.mp3" id="4_jix8l"]
+[ext_resource type="Script" uid="uid://cofkkni2x08v7" path="res://menusub/audio_control.gd" id="5_glbon"]
+[ext_resource type="Script" uid="uid://bs3ujvposiq7y" path="res://menuprincipal/startpress.gd" id="6_dy7ct"]
+[ext_resource type="Script" uid="uid://b5wblapejgor3" path="res://menusub/fullscreen_control.gd" id="6_nlkkf"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qe12f"]
+shader = ExtResource("2_qe12f")
+shader_parameter/radius = 3.0
+shader_parameter/strength = 0.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7vrkn"]
+texture = ExtResource("1_06t4h")
+modulate_color = Color(0.77, 0.77, 0.77, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fu7sn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rhts7"]
+bg_color = Color(0.121569, 0.980392, 0.407843, 0)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0.407843, 0.803922, 0.717647, 0.203922)
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7vrkn"]
+bg_color = Color(0.843137, 0.866667, 0.109804, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fu7sn"]
+bg_color = Color(0.843137, 0.866667, 0.109804, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jix8l"]
+bg_color = Color(0.843137, 0.866667, 0.109804, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_glbon"]
+bg_color = Color(0.0627451, 0.0666667, 0, 0.4)
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_jix8l"]
+color = Color(1, 1, 1, 1)
+thickness = 4
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_glbon"]
+color = Color(0.509901, 0.912187, 0.18063, 1)
+thickness = 5
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_nlkkf"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = 3.0
+offset_right = 5.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+mouse_filter = 1
+script = ExtResource("1_fu7sn")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+material = SubResource("ShaderMaterial_qe12f")
+offset_right = 1156.0
+offset_bottom = 655.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0.388235)
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -19.0
+offset_top = -20.0
+offset_right = 7.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_7vrkn")
+
+[node name="Titulo" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -381.0
+offset_top = -215.0
+offset_right = 387.0
+offset_bottom = 159.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Titulo"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.846164, 0.682323, 0, 1)
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 240
+theme_override_styles/normal = SubResource("StyleBoxTexture_fu7sn")
+text = "DITADURA"
+
+[node name="Label2" type="Label" parent="Panel/Titulo"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0.93, 0.5115, 1)
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 130
+text = "ZERO"
+
+[node name="Label" type="Label" parent="Panel/Titulo/Label2"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -221.0
+offset_top = 31.0
+offset_right = 222.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 24
+text = "Aperte qualquer botão para iniciar"
+horizontal_alignment = 1
+script = ExtResource("6_dy7ct")
+
+[node name="MainButtons" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -408.0
+offset_top = -197.0
+offset_right = 405.0
+offset_bottom = 233.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="MainButtons"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0.929412, 0.552941, 1)
+theme_override_colors/font_hover_color = Color(0.913725, 0.921569, 0.227451, 1)
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 34
+theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7vrkn")
+text = "Iniciar Jogo"
+
+[node name="Button2" type="Button" parent="MainButtons"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0.929412, 0.552941, 1)
+theme_override_colors/font_hover_color = Color(0.913725, 0.921569, 0.227451, 1)
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 34
+theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_fu7sn")
+text = "Options"
+
+[node name="Button3" type="Button" parent="MainButtons"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0.929412, 0.552941, 1)
+theme_override_colors/font_hover_color = Color(0.913725, 0.921569, 0.227451, 1)
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 34
+theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_jix8l")
+text = "Sair"
+
+[node name="Options" type="Panel" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -424.0
+offset_top = -288.0
+offset_right = 412.0
+offset_bottom = 301.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_glbon")
+
+[node name="AudioControl" type="HSlider" parent="Options"]
+layout_mode = 0
+offset_left = 155.0
+offset_top = 133.0
+offset_right = 706.0
+offset_bottom = 234.0
+theme_override_styles/slider = SubResource("StyleBoxLine_jix8l")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_glbon")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_nlkkf")
+max_value = 1.0
+step = 0.05
+value = 1.0
+script = ExtResource("5_glbon")
+audio_bus_name = "Music"
+
+[node name="back" type="Label" parent="Options"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.336124
+anchor_top = 0.0526316
+anchor_right = 0.663876
+anchor_bottom = 0.217317
+offset_left = 53.0
+offset_right = -53.0
+offset_bottom = -37.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.847059, 0.682353, 0, 1)
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 60
+text = "Options"
+metadata/_edit_use_anchors_ = true
+
+[node name="Exit" type="Button" parent="Options"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -69.0
+offset_top = -67.0
+offset_right = 61.0
+offset_bottom = -15.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0.929412, 0.552941, 1)
+theme_override_colors/font_hover_color = Color(0.913725, 0.921569, 0.227451, 1)
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 44
+theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_jix8l")
+text = "Voltar"
+
+[node name="FullscreenControl" type="CheckButton" parent="Options"]
+layout_mode = 0
+offset_left = 157.0
+offset_top = 248.0
+offset_right = 714.0
+offset_bottom = 332.0
+text = "FullScreen"
+script = ExtResource("6_nlkkf")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_jix8l")
+autoplay = true
+bus = &"Music"
+
+[connection signal="gui_input" from="Panel/Titulo" to="." method="_on_titulo_input"]
+[connection signal="pressed" from="MainButtons/Button" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="MainButtons/Button2" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="MainButtons/Button3" to="." method="_on_exit_pressed"]
+[connection signal="value_changed" from="Options/AudioControl" to="Options/AudioControl" method="_on_value_changed"]
+[connection signal="pressed" from="Options/Exit" to="." method="_on_settings_back_pressed"]
+[connection signal="toggled" from="Options/FullscreenControl" to="Options/FullscreenControl" method="_on_toggled"]

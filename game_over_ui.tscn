@@ -1,0 +1,87 @@
+[gd_scene load_steps=6 format=3 uid="uid://dc3arveiju877"]
+
+[ext_resource type="Script" uid="uid://bg6ykx5411nnk" path="res://game_over_ui.gd" id="1_nwi6w"]
+[ext_resource type="FontFile" uid="uid://b05thj7kfy38b" path="res://VT323-Regular.ttf" id="1_xu1am"]
+[ext_resource type="Script" uid="uid://bqjt26vk5njfi" path="res://button.gd" id="2_nwi6w"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4fpvo"]
+bg_color = Color(0.121569, 0.980392, 0.407843, 0)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0.407843, 0.803922, 0.717647, 0.203922)
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t4yam"]
+bg_color = Color(0.843137, 0.866667, 0.109804, 0)
+
+[node name="GameOverUI" type="CanvasLayer"]
+process_mode = 2
+script = ExtResource("1_nwi6w")
+
+[node name="Node" type="Node" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Node"]
+offset_right = 1166.0
+offset_bottom = 650.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0, 0, 0, 0.9529412)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Node"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -561.0
+offset_top = 70.0
+offset_right = 556.0
+offset_bottom = 443.0
+grow_horizontal = 2
+theme_override_constants/separation = -57
+
+[node name="Label2" type="Label" parent="Node/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0.93, 0.5115, 1)
+theme_override_fonts/font = ExtResource("1_xu1am")
+theme_override_font_sizes/font_size = 280
+text = "GAME"
+
+[node name="Label3" type="Label" parent="Node/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.84705883, 0.68235296, 0, 1)
+theme_override_fonts/font = ExtResource("1_xu1am")
+theme_override_font_sizes/font_size = 150
+text = "OVER"
+
+[node name="MainButtons" type="VBoxContainer" parent="Node"]
+anchors_preset = -1
+anchor_left = 0.42925346
+anchor_top = 0.47299382
+anchor_right = 0.57074654
+anchor_bottom = 0.52700615
+offset_left = 0.5
+offset_top = 193.5
+offset_right = 0.5
+offset_bottom = 193.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="RetryButton" type="Button" parent="Node/MainButtons"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.913725, 0.921569, 0.227451, 1)
+theme_override_fonts/font = ExtResource("1_xu1am")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxFlat_4fpvo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_t4yam")
+text = "Tentar Novamente"
+script = ExtResource("2_nwi6w")
+
+[connection signal="pressed" from="Node/MainButtons/RetryButton" to="." method="_on_retry_button_pressed"]

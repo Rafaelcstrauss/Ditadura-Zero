@@ -196,8 +196,8 @@ script = ExtResource("7_pdc58")
 
 [connection signal="pressed" from="CanvasLayer/pauseMenu/submenu/resume" to="." method="_on_resume_pressed"]
 [connection signal="pressed" from="CanvasLayer/pauseMenu/submenu/resume" to="." method="resume"]
-[connection signal="pressed" from="CanvasLayer/pauseMenu/submenu/settings" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="CanvasLayer/pauseMenu/submenu/settings" to="." method="settings"]
+[connection signal="pressed" from="CanvasLayer/pauseMenu/submenu/settings" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="CanvasLayer/pauseMenu/submenu/sair" to="." method="sair"]
 [connection signal="value_changed" from="CanvasLayer/pauseMenu/Options/AudioControl" to="CanvasLayer/pauseMenu/Options/AudioControl" method="_on_value_changed"]
 [connection signal="pressed" from="CanvasLayer/pauseMenu/Options/Exit" to="." method="handle_escape"]

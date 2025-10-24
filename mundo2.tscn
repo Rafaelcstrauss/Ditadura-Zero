@@ -1,4 +1,4 @@
-[gd_scene load_steps=86 format=4 uid="uid://bkwlvwm7g2uog"]
+[gd_scene load_steps=87 format=4 uid="uid://bkwlvwm7g2uog"]
 
 [ext_resource type="Texture2D" uid="uid://dk53qij8r4hvw" path="res://tilesets/Action Pack - CITY/Assets/Assets_City.png" id="1_1s624"]
 [ext_resource type="Texture2D" uid="uid://hr7rdiy4phew" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/17.png" id="2_54eo1"]
@@ -36,6 +36,7 @@
 [ext_resource type="PackedScene" uid="uid://bl45826wgboie" path="res://portaP.tscn" id="34_rueum"]
 [ext_resource type="AudioStream" uid="uid://n5skhuuo1n4c" path="res://Rain falling steadily on a calm lake, creating gentle ripples..mp3" id="35_w74oi"]
 [ext_resource type="AudioStream" uid="uid://cxlvgpy4ua5it" path="res://industrial-noise-hum-of-production.mp3" id="36_x0wpa"]
+[ext_resource type="PackedScene" uid="uid://7lhs0bvgpipi" path="res://menusub/submenu.tscn" id="37_frqkd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x0wpa"]
 texture = ExtResource("1_1s624")
@@ -2438,3 +2439,5 @@ stream = ExtResource("36_x0wpa")
 volume_db = 5.0
 autoplay = true
 parameters/looping = true
+
+[node name="submenu" parent="." instance=ExtResource("37_frqkd")]
