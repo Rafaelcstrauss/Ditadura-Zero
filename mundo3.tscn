@@ -1,4 +1,4 @@
-[gd_scene load_steps=118 format=4 uid="uid://buholhmuabdnh"]
+[gd_scene load_steps=119 format=4 uid="uid://buholhmuabdnh"]
 
 [ext_resource type="Texture2D" uid="uid://dk53qij8r4hvw" path="res://tilesets/Action Pack - CITY/Assets/Assets_City.png" id="1_2tn8i"]
 [ext_resource type="Texture2D" uid="uid://hr7rdiy4phew" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/17.png" id="2_fwjue"]
@@ -35,8 +35,9 @@
 [ext_resource type="PackedScene" uid="uid://occc148cobel" path="res://character_body_2d.tscn" id="33_fwjue"]
 [ext_resource type="PackedScene" uid="uid://cekxxfabp4mk8" path="res://inimigoDois.tscn" id="35_5bboe"]
 [ext_resource type="PackedScene" uid="uid://bl45826wgboie" path="res://portaP.tscn" id="35_bwl7o"]
-[ext_resource type="PackedScene" uid="uid://7lhs0bvgpipi" path="res://menusub/submenu.tscn" id="36_5bboe"]
 [ext_resource type="Script" uid="uid://c0mr4lfrum0d8" path="res://porta_p2.gd" id="35_tg8u3"]
+[ext_resource type="PackedScene" uid="uid://7lhs0bvgpipi" path="res://menusub/submenu.tscn" id="36_5bboe"]
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rqnfl"]
 texture = ExtResource("1_2tn8i")
 0:0/0 = 0
@@ -2965,7 +2966,7 @@ size = Vector2(163, 13.6875)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bwl7o"]
 size = Vector2(5, 170.5)
 
-[node name="Node2D3" type="Node2D"]
+[node name="Node2D" type="Node2D"]
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color(0.513233, 0.513233, 0.513233, 1)

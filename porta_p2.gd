@@ -11,7 +11,8 @@ func _ready() -> void:
 	texto.visible = false
 
 # Função que é executada a cada frame para checar inputs e lógica.
-func _process(delta: float) -> void:
+# Corrigido: O parâmetro 'delta' agora é '_delta' para silenciar o aviso.
+func _process(_delta: float) -> void:
 	# Checa o input do jogador somente se ele estiver dentro da área.
 	checar_entrada_cena()
 
