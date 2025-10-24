@@ -1,4 +1,4 @@
-[gd_scene load_steps=86 format=4 uid="uid://dff3vyv2k8m2l"]
+[gd_scene load_steps=87 format=4 uid="uid://dff3vyv2k8m2l"]
 
 [ext_resource type="Texture2D" uid="uid://dk53qij8r4hvw" path="res://tilesets/Action Pack - CITY/Assets/Assets_City.png" id="1_yg1wj"]
 [ext_resource type="Texture2D" uid="uid://hr7rdiy4phew" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/17.png" id="2_81615"]
@@ -36,6 +36,7 @@
 [ext_resource type="PackedScene" uid="uid://bl45826wgboie" path="res://portaP.tscn" id="34_35dwf"]
 [ext_resource type="AudioStream" uid="uid://n5skhuuo1n4c" path="res://Rain falling steadily on a calm lake, creating gentle ripples..mp3" id="35_rgnnh"]
 [ext_resource type="AudioStream" uid="uid://cxlvgpy4ua5it" path="res://industrial-noise-hum-of-production.mp3" id="36_8v37v"]
+[ext_resource type="PackedScene" uid="uid://l7ptanqhla6x" path="res://submenu.tscn" id="36_yg1wj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x0wpa"]
 texture = ExtResource("1_yg1wj")
@@ -2421,9 +2422,6 @@ color = Color(0.612299, 6.97896e-07, 7.70092e-07, 1)
 energy = 4.75
 texture = ExtResource("33_peeue")
 
-[node name="Area2D" parent="." instance=ExtResource("34_35dwf")]
-position = Vector2(408, 500)
-
 [node name="chuva de fundo" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(-42, 614)
 stream = ExtResource("35_rgnnh")
@@ -2438,3 +2436,8 @@ stream = ExtResource("36_8v37v")
 volume_db = 5.0
 autoplay = true
 parameters/looping = true
+
+[node name="Area2D" parent="." instance=ExtResource("34_35dwf")]
+position = Vector2(408, 500)
+
+[node name="submenu" parent="." instance=ExtResource("36_yg1wj")]

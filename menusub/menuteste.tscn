@@ -1,14 +1,13 @@
-[gd_scene load_steps=18 format=3 uid="uid://7lhs0bvgpipi"]
+[gd_scene load_steps=17 format=3 uid="uid://dta3safg6udfc"]
 
-[ext_resource type="Script" uid="uid://btdokps4a08mh" path="res://submenu.gd" id="1_f2r5y"]
-[ext_resource type="FontFile" uid="uid://b05thj7kfy38b" path="res://menusub/VT323-Regular.ttf" id="2_axnmm"]
-[ext_resource type="Script" uid="uid://cofkkni2x08v7" path="res://audio_control.gd" id="3_717fo"]
-[ext_resource type="Script" uid="uid://cfbjwc3eswngu" path="res://exit.gd" id="4_k1htc"]
-[ext_resource type="Script" uid="uid://b5wblapejgor3" path="res://fullscreen_control.gd" id="5_hjpt5"]
-[ext_resource type="AudioStream" uid="uid://bdaw2x8yveup0" path="res://menusub/musica.mp3" id="6_a54ir"]
-[ext_resource type="Script" uid="uid://djnp3cu3dcd8" path="res://menusub/audio_stream_player_2d.gd" id="7_pdc58"]
+[ext_resource type="FontFile" uid="uid://b05thj7kfy38b" path="res://menusub/VT323-Regular.ttf" id="1_lhbpo"]
+[ext_resource type="Script" uid="uid://cofkkni2x08v7" path="res://audio_control.gd" id="2_y2gl1"]
+[ext_resource type="Script" uid="uid://cfbjwc3eswngu" path="res://exit.gd" id="3_ycpxp"]
+[ext_resource type="Script" uid="uid://b5wblapejgor3" path="res://fullscreen_control.gd" id="4_2yqut"]
+[ext_resource type="AudioStream" uid="uid://bdaw2x8yveup0" path="res://menusub/musica.mp3" id="5_7bygy"]
+[ext_resource type="Script" uid="uid://djnp3cu3dcd8" path="res://menusub/audio_stream_player_2d.gd" id="6_31k5i"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wul5w"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r56ey"]
 bg_color = Color(0.121569, 0.980392, 0.407843, 0)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
@@ -17,29 +16,29 @@ corner_radius_bottom_left = 16
 shadow_color = Color(0.407843, 0.803922, 0.717647, 0.203922)
 shadow_offset = Vector2(0, 3.41)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_juq12"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_imi7j"]
 bg_color = Color(0.843137, 0.866667, 0.109804, 0)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jsxu3"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t567r"]
 bg_color = Color(0.843137, 0.866667, 0.109804, 0)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b5gqg"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hltbg"]
 bg_color = Color(0.843137, 0.866667, 0.109804, 0)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7ufyn"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vkl1k"]
 bg_color = Color(0.0627451, 0.0666667, 0, 0.4)
 
-[sub_resource type="StyleBoxLine" id="StyleBoxLine_6tbpw"]
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_3wp84"]
 color = Color(1, 1, 1, 1)
 thickness = 4
 
-[sub_resource type="StyleBoxLine" id="StyleBoxLine_m56wn"]
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_jamfe"]
 color = Color(0.509901, 0.912187, 0.18063, 1)
 thickness = 5
 
-[sub_resource type="StyleBoxLine" id="StyleBoxLine_5dlki"]
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_hqw3k"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h5q64"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x7jao"]
 bg_color = Color(0.121569, 0.980392, 0.407843, 0)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
@@ -48,11 +47,10 @@ corner_radius_bottom_left = 16
 shadow_color = Color(0.407843, 0.803922, 0.717647, 0.203922)
 shadow_offset = Vector2(0, 3.41)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4jl6o"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nbsvi"]
 bg_color = Color(0.843137, 0.866667, 0.109804, 0)
 
-[node name="submenu" type="Node2D"]
-script = ExtResource("1_f2r5y")
+[node name="CanvasLayer" type="CanvasLayer"]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -81,10 +79,10 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0.929412, 0.552941, 1)
 theme_override_colors/font_hover_color = Color(0.913725, 0.921569, 0.227451, 1)
-theme_override_fonts/font = ExtResource("2_axnmm")
+theme_override_fonts/font = ExtResource("1_lhbpo")
 theme_override_font_sizes/font_size = 34
-theme_override_styles/normal = SubResource("StyleBoxFlat_wul5w")
-theme_override_styles/hover = SubResource("StyleBoxFlat_juq12")
+theme_override_styles/normal = SubResource("StyleBoxFlat_r56ey")
+theme_override_styles/hover = SubResource("StyleBoxFlat_imi7j")
 text = "Resume"
 
 [node name="settings" type="Button" parent="CanvasLayer/pauseMenu/submenu"]
@@ -92,10 +90,10 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0.929412, 0.552941, 1)
 theme_override_colors/font_hover_color = Color(0.913725, 0.921569, 0.227451, 1)
-theme_override_fonts/font = ExtResource("2_axnmm")
+theme_override_fonts/font = ExtResource("1_lhbpo")
 theme_override_font_sizes/font_size = 34
-theme_override_styles/normal = SubResource("StyleBoxFlat_wul5w")
-theme_override_styles/hover = SubResource("StyleBoxFlat_jsxu3")
+theme_override_styles/normal = SubResource("StyleBoxFlat_r56ey")
+theme_override_styles/hover = SubResource("StyleBoxFlat_t567r")
 text = "Options"
 
 [node name="sair" type="Button" parent="CanvasLayer/pauseMenu/submenu"]
@@ -103,10 +101,10 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0.929412, 0.552941, 1)
 theme_override_colors/font_hover_color = Color(0.913725, 0.921569, 0.227451, 1)
-theme_override_fonts/font = ExtResource("2_axnmm")
+theme_override_fonts/font = ExtResource("1_lhbpo")
 theme_override_font_sizes/font_size = 34
-theme_override_styles/normal = SubResource("StyleBoxFlat_wul5w")
-theme_override_styles/hover = SubResource("StyleBoxFlat_b5gqg")
+theme_override_styles/normal = SubResource("StyleBoxFlat_r56ey")
+theme_override_styles/hover = SubResource("StyleBoxFlat_hltbg")
 text = "Sair"
 
 [node name="Options" type="Panel" parent="CanvasLayer/pauseMenu"]
@@ -122,7 +120,7 @@ offset_right = 418.0
 offset_bottom = 294.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_7ufyn")
+theme_override_styles/panel = SubResource("StyleBoxFlat_vkl1k")
 
 [node name="AudioControl" type="HSlider" parent="CanvasLayer/pauseMenu/Options"]
 layout_mode = 0
@@ -130,13 +128,13 @@ offset_left = 155.0
 offset_top = 133.0
 offset_right = 706.0
 offset_bottom = 234.0
-theme_override_styles/slider = SubResource("StyleBoxLine_6tbpw")
-theme_override_styles/grabber_area = SubResource("StyleBoxLine_m56wn")
-theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_5dlki")
+theme_override_styles/slider = SubResource("StyleBoxLine_3wp84")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_jamfe")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_hqw3k")
 max_value = 1.0
 step = 0.05
 value = 1.0
-script = ExtResource("3_717fo")
+script = ExtResource("2_y2gl1")
 audio_bus_name = "Music"
 
 [node name="back" type="Label" parent="CanvasLayer/pauseMenu/Options"]
@@ -151,7 +149,7 @@ offset_right = -53.0
 offset_bottom = -37.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0.847059, 0.682353, 0, 1)
-theme_override_fonts/font = ExtResource("2_axnmm")
+theme_override_fonts/font = ExtResource("1_lhbpo")
 theme_override_font_sizes/font_size = 60
 text = "Options"
 metadata/_edit_use_anchors_ = true
@@ -172,12 +170,12 @@ grow_vertical = 0
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0.929412, 0.552941, 1)
 theme_override_colors/font_hover_color = Color(0.913725, 0.921569, 0.227451, 1)
-theme_override_fonts/font = ExtResource("2_axnmm")
+theme_override_fonts/font = ExtResource("1_lhbpo")
 theme_override_font_sizes/font_size = 44
-theme_override_styles/normal = SubResource("StyleBoxFlat_h5q64")
-theme_override_styles/hover = SubResource("StyleBoxFlat_4jl6o")
+theme_override_styles/normal = SubResource("StyleBoxFlat_x7jao")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nbsvi")
 text = "Voltar"
-script = ExtResource("4_k1htc")
+script = ExtResource("3_ycpxp")
 
 [node name="FullscreenControl" type="CheckButton" parent="CanvasLayer/pauseMenu/Options"]
 layout_mode = 0
@@ -186,18 +184,12 @@ offset_top = 248.0
 offset_right = 714.0
 offset_bottom = 332.0
 text = "FullScreen"
-script = ExtResource("5_hjpt5")
+script = ExtResource("4_2yqut")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("6_a54ir")
+stream = ExtResource("5_7bygy")
 autoplay = true
-script = ExtResource("7_pdc58")
+script = ExtResource("6_31k5i")
 
-[connection signal="pressed" from="CanvasLayer/pauseMenu/submenu/resume" to="." method="_on_resume_pressed"]
-[connection signal="pressed" from="CanvasLayer/pauseMenu/submenu/resume" to="." method="resume"]
-[connection signal="pressed" from="CanvasLayer/pauseMenu/submenu/settings" to="." method="_on_settings_pressed"]
-[connection signal="pressed" from="CanvasLayer/pauseMenu/submenu/settings" to="." method="settings"]
-[connection signal="pressed" from="CanvasLayer/pauseMenu/submenu/sair" to="." method="sair"]
 [connection signal="value_changed" from="CanvasLayer/pauseMenu/Options/AudioControl" to="CanvasLayer/pauseMenu/Options/AudioControl" method="_on_value_changed"]
-[connection signal="pressed" from="CanvasLayer/pauseMenu/Options/Exit" to="." method="handle_escape"]
 [connection signal="toggled" from="CanvasLayer/pauseMenu/Options/FullscreenControl" to="CanvasLayer/pauseMenu/Options/FullscreenControl" method="_on_toggled"]
