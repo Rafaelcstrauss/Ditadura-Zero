@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://uvl26ob5bvn3"]
+
+[ext_resource type="Script" uid="uid://26sxvw2gm6ud" path="res://cutscene.gd" id="1_ix241"]
+
+[node name="Cutscene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -20.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ix241")
+typing_speed = null
+dialogue_lines = null
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -41.0
+offset_top = -31.0
+offset_right = 1157.0
+offset_bottom = 670.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 1125.0
+offset_bottom = 626.0
+color = Color(0, 0, 0, 1)
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

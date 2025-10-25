@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0gtdbay7gcua"]
+
+[ext_resource type="Script" uid="uid://dbtuhlekye0h1" path="res://scenes/dialogue_layer.gd" id="1_715sx"]
+[ext_resource type="FontFile" uid="uid://djoiv0oy2xi3c" path="res://VT323-Regular.ttf" id="2_ftchp"]
+
+[node name="DialogueLayer" type="CanvasLayer"]
+process_mode = 2
+layer = 10
+script = ExtResource("1_715sx")
+
+[node name="Background" type="ColorRect" parent="."]
+offset_right = 1150.0
+offset_bottom = 653.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Container" type="VBoxContainer" parent="."]
+offset_left = 73.0
+offset_right = 1086.0
+offset_bottom = 651.0
+alignment = 1
+
+[node name="SpeakerName" type="Label" parent="Container"]
+layout_mode = 2
+size_flags_vertical = 0
+text = "AAAAAA"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="DialogueText" type="Label" parent="Container"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("2_ftchp")
+theme_override_font_sizes/font_size = 49
+text = "AAAAAAA"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="TextTimer" type="Timer" parent="Container"]
+process_mode = 2
