@@ -1,4 +1,4 @@
-[gd_scene load_steps=90 format=4 uid="uid://dff3vyv2k8m2l"]
+[gd_scene load_steps=92 format=4 uid="uid://dff3vyv2k8m2l"]
 
 [ext_resource type="Texture2D" uid="uid://dk53qij8r4hvw" path="res://tilesets/Action Pack - CITY/Assets/Assets_City.png" id="1_yg1wj"]
 [ext_resource type="Texture2D" uid="uid://hr7rdiy4phew" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/17.png" id="2_81615"]
@@ -39,6 +39,8 @@
 [ext_resource type="PackedScene" uid="uid://l7ptanqhla6x" path="res://submenu.tscn" id="36_yg1wj"]
 [ext_resource type="Script" uid="uid://cx8yui6lgh0gj" path="res://end.gd" id="38_oucu0"]
 [ext_resource type="AudioStream" uid="uid://c3gea7n4loapw" path="res://cartao-passando.mp3" id="39_l15g1"]
+[ext_resource type="AudioStream" uid="uid://bdaw2x8yveup0" path="res://menusub/musica.mp3" id="40_hyqtt"]
+[ext_resource type="Script" uid="uid://djnp3cu3dcd8" path="res://menusub/audio_stream_player_2d.gd" id="41_yugeh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x0wpa"]
 texture = ExtResource("1_yg1wj")
@@ -2458,5 +2460,10 @@ shape = SubResource("RectangleShape2D_81615")
 [node name="Sound" type="AudioStreamPlayer" parent="end"]
 stream = ExtResource("39_l15g1")
 volume_db = 21.465
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("40_hyqtt")
+autoplay = true
+script = ExtResource("41_yugeh")
 
 [connection signal="body_entered" from="end" to="end" method="_on_body_entered"]

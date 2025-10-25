@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=4 uid="uid://dlselkvqw01wb"]
+[gd_scene load_steps=27 format=4 uid="uid://dlselkvqw01wb"]
 
 [ext_resource type="PackedScene" uid="uid://cf36susui4qc8" path="res://fundo.tscn" id="1_epypp"]
 [ext_resource type="PackedScene" uid="uid://7lhs0bvgpipi" path="res://menusub/submenu.tscn" id="1_hqns4"]
@@ -12,6 +12,8 @@
 [ext_resource type="Texture2D" uid="uid://dk1c5h7w47lj0" path="res://luzSprite.webp" id="8_rj586"]
 [ext_resource type="PackedScene" uid="uid://dcoyolft5pi5d" path="res://enemy.tscn" id="9_4d7sh"]
 [ext_resource type="PackedScene" uid="uid://btoa5ptp5aycb" path="res://area_2d.tscn" id="10_ir8iy"]
+[ext_resource type="AudioStream" uid="uid://bdaw2x8yveup0" path="res://menusub/musica.mp3" id="13_nr8wp"]
+[ext_resource type="Script" uid="uid://djnp3cu3dcd8" path="res://menusub/audio_stream_player_2d.gd" id="14_d2bti"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kdubu"]
 size = Vector2(1160, 20)
@@ -1338,3 +1340,8 @@ position = Vector2(964, 580)
 
 [node name="Area2D" parent="." instance=ExtResource("10_ir8iy")]
 position = Vector2(718, 498)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("13_nr8wp")
+autoplay = true
+script = ExtResource("14_d2bti")

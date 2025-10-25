@@ -1,4 +1,4 @@
-[gd_scene load_steps=119 format=4 uid="uid://buholhmuabdnh"]
+[gd_scene load_steps=121 format=4 uid="uid://buholhmuabdnh"]
 
 [ext_resource type="Texture2D" uid="uid://dk53qij8r4hvw" path="res://tilesets/Action Pack - CITY/Assets/Assets_City.png" id="1_2tn8i"]
 [ext_resource type="Texture2D" uid="uid://hr7rdiy4phew" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/17.png" id="2_fwjue"]
@@ -37,6 +37,8 @@
 [ext_resource type="PackedScene" uid="uid://bl45826wgboie" path="res://portaP.tscn" id="35_bwl7o"]
 [ext_resource type="Script" uid="uid://c0mr4lfrum0d8" path="res://porta_p2.gd" id="35_tg8u3"]
 [ext_resource type="PackedScene" uid="uid://7lhs0bvgpipi" path="res://menusub/submenu.tscn" id="36_5bboe"]
+[ext_resource type="AudioStream" uid="uid://bdaw2x8yveup0" path="res://menusub/musica.mp3" id="38_8tg0j"]
+[ext_resource type="Script" uid="uid://djnp3cu3dcd8" path="res://menusub/audio_stream_player_2d.gd" id="39_ylejv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rqnfl"]
 texture = ExtResource("1_2tn8i")
@@ -3081,3 +3083,8 @@ position = Vector2(8, 503)
 script = ExtResource("35_tg8u3")
 
 [node name="submenu" parent="." instance=ExtResource("36_5bboe")]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("38_8tg0j")
+autoplay = true
+script = ExtResource("39_ylejv")
