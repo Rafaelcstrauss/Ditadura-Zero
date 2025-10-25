@@ -5,9 +5,9 @@
 [ext_resource type="FontFile" uid="uid://b05thj7kfy38b" path="res://menusub/VT323-Regular.ttf" id="2_7vrkn"]
 [ext_resource type="Shader" uid="uid://bgvkjsemqsdg8" path="res://menuprincipal/main_menu.gdshader" id="2_qe12f"]
 [ext_resource type="AudioStream" uid="uid://bdaw2x8yveup0" path="res://menusub/musica.mp3" id="4_jix8l"]
-[ext_resource type="Script" uid="uid://cofkkni2x08v7" path="res://menusub/audio_control.gd" id="5_glbon"]
-[ext_resource type="Script" uid="uid://bs3ujvposiq7y" path="res://menuprincipal/startpress.gd" id="6_dy7ct"]
-[ext_resource type="Script" uid="uid://b5wblapejgor3" path="res://menusub/fullscreen_control.gd" id="6_nlkkf"]
+[ext_resource type="Script" uid="uid://cofkkni2x08v7" path="res://audio_control.gd" id="5_glbon"]
+[ext_resource type="Script" uid="uid://bs3ujvposiq7y" path="res://startpress.gd" id="6_dy7ct"]
+[ext_resource type="Script" uid="uid://b5wblapejgor3" path="res://fullscreen_control.gd" id="6_nlkkf"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_qe12f"]
 shader = ExtResource("2_qe12f")
@@ -269,7 +269,6 @@ script = ExtResource("6_nlkkf")
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_jix8l")
 autoplay = true
-bus = &"Music"
 
 [connection signal="gui_input" from="Panel/Titulo" to="." method="_on_titulo_input"]
 [connection signal="pressed" from="MainButtons/Button" to="." method="_on_start_pressed"]

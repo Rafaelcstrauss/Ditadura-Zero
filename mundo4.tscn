@@ -1,4 +1,4 @@
-[gd_scene load_steps=87 format=4 uid="uid://dff3vyv2k8m2l"]
+[gd_scene load_steps=90 format=4 uid="uid://dff3vyv2k8m2l"]
 
 [ext_resource type="Texture2D" uid="uid://dk53qij8r4hvw" path="res://tilesets/Action Pack - CITY/Assets/Assets_City.png" id="1_yg1wj"]
 [ext_resource type="Texture2D" uid="uid://hr7rdiy4phew" path="res://tilesets/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/17.png" id="2_81615"]
@@ -37,6 +37,8 @@
 [ext_resource type="AudioStream" uid="uid://n5skhuuo1n4c" path="res://Rain falling steadily on a calm lake, creating gentle ripples..mp3" id="35_rgnnh"]
 [ext_resource type="AudioStream" uid="uid://cxlvgpy4ua5it" path="res://industrial-noise-hum-of-production.mp3" id="36_8v37v"]
 [ext_resource type="PackedScene" uid="uid://l7ptanqhla6x" path="res://submenu.tscn" id="36_yg1wj"]
+[ext_resource type="Script" uid="uid://cx8yui6lgh0gj" path="res://end.gd" id="38_oucu0"]
+[ext_resource type="AudioStream" uid="uid://c3gea7n4loapw" path="res://cartao-passando.mp3" id="39_l15g1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x0wpa"]
 texture = ExtResource("1_yg1wj")
@@ -2317,6 +2319,9 @@ size = Vector2(601.5, 16)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x0wpa"]
 size = Vector2(143, 9)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_81615"]
+size = Vector2(32, 51)
+
 [node name="Node2D" type="Node2D"]
 
 [node name="Predio" type="TileMapLayer" parent="."]
@@ -2437,7 +2442,21 @@ volume_db = 5.0
 autoplay = true
 parameters/looping = true
 
+[node name="submenu" parent="." instance=ExtResource("36_yg1wj")]
+
 [node name="Area2D" parent="." instance=ExtResource("34_35dwf")]
 position = Vector2(408, 500)
 
-[node name="submenu" parent="." instance=ExtResource("36_yg1wj")]
+[node name="end" type="Area2D" parent="."]
+position = Vector2(403, 558)
+script = ExtResource("38_oucu0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="end"]
+position = Vector2(21, 40)
+shape = SubResource("RectangleShape2D_81615")
+
+[node name="Sound" type="AudioStreamPlayer" parent="end"]
+stream = ExtResource("39_l15g1")
+volume_db = 21.465
+
+[connection signal="body_entered" from="end" to="end" method="_on_body_entered"]
