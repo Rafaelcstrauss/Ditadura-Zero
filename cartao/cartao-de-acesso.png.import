@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpux2hsru7toy"
-path="res://.godot/imported/card.png-77533492ac6a2114673937150a38a4a0.ctex"
+uid="uid://n1k3qjqy6wkx"
+path="res://.godot/imported/cartao-de-acesso.png-ca3ab67d3c3c5c0552d03b7bc86dd877.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://cartao/card.png"
-dest_files=["res://.godot/imported/card.png-77533492ac6a2114673937150a38a4a0.ctex"]
+source_file="res://cartao/cartao-de-acesso.png"
+dest_files=["res://.godot/imported/cartao-de-acesso.png-ca3ab67d3c3c5c0552d03b7bc86dd877.ctex"]
 
 [params]
 

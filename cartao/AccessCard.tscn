@@ -1,10 +1,10 @@
 [gd_scene load_steps=5 format=3 uid="uid://bg6b6km30f1bb"]
 
 [ext_resource type="Script" uid="uid://cdscdj2jojaq3" path="res://cartao/AccessCard.gd" id="1_87m3q"]
-[ext_resource type="Texture2D" uid="uid://cpux2hsru7toy" path="res://cartao/card.png" id="2_7c42h"]
+[ext_resource type="Texture2D" uid="uid://n1k3qjqy6wkx" path="res://cartao/cartao-de-acesso.png" id="2_87m3q"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oe57t"]
-size = Vector2(193.91803, 239.8389)
+size = Vector2(152.36417, 247.06793)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eboik"]
 size = Vector2(387.83606, 428.25098)
@@ -14,12 +14,12 @@ position = Vector2(1, 1)
 script = ExtResource("1_87m3q")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(3, 4)
-scale = Vector2(0.016660485, 0.014767795)
-texture = ExtResource("2_7c42h")
+position = Vector2(0.23491603, 5)
+scale = Vector2(0.01125993, 0.010416666)
+texture = ExtResource("2_87m3q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(2.0000005, 3.7194448)
+position = Vector2(0.5, 4.5)
 scale = Vector2(0.07219545, 0.060712043)
 shape = SubResource("RectangleShape2D_oe57t")
 
@@ -28,15 +28,15 @@ position = Vector2(9, 11.499999)
 scale = Vector2(0.07219545, 0.06071204)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-69.256454, -140.00522)
+position = Vector2(-83.10773, -140.00519)
 scale = Vector2(1.0000001, 1.0000006)
 shape = SubResource("RectangleShape2D_eboik")
 
 [node name="Label" type="Label" parent="Area2D"]
-offset_left = -540.2002
-offset_top = -601.1987
+offset_left = -540.20026
+offset_top = -485.90033
 offset_right = 2432.7998
-offset_bottom = 85.80127
+offset_bottom = 530.5237
 theme_override_font_sizes/font_size = 75
 text = "Pressione \"E\" para pegar
 "
