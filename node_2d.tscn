@@ -1334,9 +1334,13 @@ height = 179.0
 
 [node name="CharacterBody2D2" parent="." instance=ExtResource("9_4d7sh")]
 position = Vector2(667, 581)
+attack_cooldown = 1.0
+max_health = 40.0
 
 [node name="CharacterBody2D3" parent="." instance=ExtResource("9_4d7sh")]
 position = Vector2(964, 580)
+attack_cooldown = 1.0
+max_health = 40.0
 
 [node name="Area2D" parent="." instance=ExtResource("10_ir8iy")]
 position = Vector2(718, 498)
