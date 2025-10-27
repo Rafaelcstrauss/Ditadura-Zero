@@ -2454,7 +2454,7 @@ position = Vector2(403, 558)
 script = ExtResource("38_oucu0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="end"]
-position = Vector2(21, 40)
+position = Vector2(161, 40)
 shape = SubResource("RectangleShape2D_81615")
 
 [node name="Sound" type="AudioStreamPlayer" parent="end"]
